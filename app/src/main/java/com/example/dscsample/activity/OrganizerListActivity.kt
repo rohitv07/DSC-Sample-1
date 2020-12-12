@@ -62,4 +62,9 @@ class OrganizerListActivity : AppCompatActivity() {
         super.onPause()
         finish()
     }
+
+    override fun onBackPressed() {
+        val intent = Intent(this,MainActivity::class.java)
+        startActivity(intent)
+    }
 }

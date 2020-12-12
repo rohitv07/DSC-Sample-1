@@ -51,4 +51,10 @@ class MainActivity : AppCompatActivity() {
       //email_chip has to be added
 
     }
+
+    override fun onPause() {
+        super.onPause()
+        finish()
+    }
+
 }
