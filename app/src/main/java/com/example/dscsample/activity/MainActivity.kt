@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, OrganizerListActivity::class.java)
             startActivity(intent)
         }
-
+      //email_chip has to be added
 
     }
 }
