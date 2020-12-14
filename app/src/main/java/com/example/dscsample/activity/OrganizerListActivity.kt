@@ -28,8 +28,8 @@ class OrganizerListActivity : AppCompatActivity() {
 
         val members = ArrayList<Members>()
 
-        members.add(Members("Divyanshi Gupta","DSC Lead",R.drawable.divyanshi))
-        members.add(Members("ADARSH GUPTA","EVENT MANAGER",R.drawable.adarsh))
+        members.add(Members("Divyanshi Gupta","DSC LEAD",R.drawable.divyanshi))
+        members.add(Members("Adarsh GUPTA","EVENT MANAGER",R.drawable.adarsh))
         members.add(Members("Aditi Jindal","MARKETING ASSOCIATE",R.drawable.aditi))
         members.add(Members("Ashish Soyetra","EVENT MANAGER",R.drawable.ashish))
         members.add(Members("Jagpreet Makkad","EVENT MANAGER",R.drawable.jagpreet))
