@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DSC Sample</string>
+    <string name="preference_file_name">DSC Preferences</string>
 </resources>

@@ -39,7 +39,8 @@
             android:id="@+id/name_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Please Enter Your Name" />
+            android:hint="Please Enter Your Name"
+            android:singleLine="true"/>
 
         <Button
             android:id="@+id/continue_btn"
