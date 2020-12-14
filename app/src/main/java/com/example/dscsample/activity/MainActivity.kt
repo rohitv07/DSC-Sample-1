@@ -36,9 +36,9 @@ class MainActivity : AppCompatActivity() {
         instagram_chip = findViewById(R.id.instagram_chip)
         slack_chip = findViewById(R.id.slack_chip)
         organizer_btn = findViewById(R.id.organizer_btn)
-        txtUserName = findViewById(R.id.txtUserName)
+        txtUserName = findViewById(R.id.txt_user_name)
 
-        txtUserName.setText("Welcome ${username},")
+        txtUserName.text = "Welcome ${username},"
 
 
         linkedin_chip.setOnClickListener {
