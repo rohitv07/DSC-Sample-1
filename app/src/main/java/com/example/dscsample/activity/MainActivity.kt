@@ -2,9 +2,9 @@ package com.example.dscsample.activity
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.dscsample.R
 import com.google.android.material.chip.Chip
 
@@ -28,19 +28,19 @@ class MainActivity : AppCompatActivity() {
 
         linkedin_chip.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.setData(Uri.parse("https://www.linkedin.com/in/dscsstc/"))
+            intent.data = Uri.parse("https://www.linkedin.com/in/dscsstc/")
             startActivity(intent)
         }
 
         instagram_chip.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.setData(Uri.parse("https://www.instagram.com/dsc_sstc/"))
+            intent.data = Uri.parse("https://www.instagram.com/dsc_sstc/")
             startActivity(intent)
         }
 
         slack_chip.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.setData(Uri.parse("https://dscsstc.slack.com"))
+            intent.data = Uri.parse("https://dscsstc.slack.com")
             startActivity(intent)
         }
 
@@ -48,13 +48,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, OrganizerListActivity::class.java)
             startActivity(intent)
         }
-      //email_chip has to be added
 
-    }
+        //TODO email_chip has to be added
 
-    override fun onPause() {
-        super.onPause()
-        finish()
     }
 
 }

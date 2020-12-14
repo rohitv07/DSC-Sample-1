@@ -1,18 +1,17 @@
 package com.example.dscsample.activity
 
 import android.annotation.SuppressLint
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dscsample.R
 import com.example.dscsample.adapters.OrganizerAdapter
 import com.example.dscsample.model.Members
 
- lateinit var  back_btn:ImageButton
+lateinit var back_btn: ImageButton
 
 
 class OrganizerListActivity : AppCompatActivity() {
@@ -53,18 +52,7 @@ class OrganizerListActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         back_btn.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
+            onBackPressed()
         }
-    }
-
-    override fun onPause() {
-        super.onPause()
-        finish()
-    }
-
-    override fun onBackPressed() {
-        val intent = Intent(this,MainActivity::class.java)
-        startActivity(intent)
     }
 }
